@@ -13,16 +13,11 @@
  * limitations under the License.
  */
 
-package net.fabricmc.example
+package com.github.carrot372.namlanforminecraft.item
 
+import com.github.carrot372.namlanforminecraft.NamlanGroup
+import net.minecraft.item.Item
 
-
-@Suppress("unused")
-fun init() {
-    // This code runs as soon as Minecraft is in a mod-load-ready state.
-    // However, some things (like resources) may still be uninitialized.
-    // Proceed with mild caution.
-
-    println("Hello Fabric world!")
+object DevTool {
+    val DEVTOOL = Item(Item.Settings().group(NamlanGroup.NAMLANGROUP))
 }
-

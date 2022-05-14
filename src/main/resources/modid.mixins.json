@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.github.carrot372.namlanforminecraft.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "NamlanForMinecraftMixin"
   ],
   "injectors": {
     "defaultRequire": 1
