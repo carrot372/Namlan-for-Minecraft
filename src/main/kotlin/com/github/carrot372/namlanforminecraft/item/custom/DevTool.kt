@@ -13,11 +13,11 @@
  * limitations under the License.
  */
 
-package com.github.carrot372.namlanforminecraft.item
+package com.github.carrot372.namlanforminecraft.item.custom
 
-import com.github.carrot372.namlanforminecraft.NamlanGroup
+import com.github.carrot372.namlanforminecraft.item.ModMenu
 import net.minecraft.item.Item
 
 object DevTool {
-    val DEVTOOL = Item(Item.Settings().group(NamlanGroup.NAMLANGROUP))
+    val DEVTOOL = Item(Item.Settings().group(ModMenu.NAMLANGROUP))
 }

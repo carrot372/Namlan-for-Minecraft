@@ -13,18 +13,5 @@
  * limitations under the License.
  */
 
-package com.github.carrot372.namlanforminecraft
-
-import com.github.carrot372.namlanforminecraft.util.ModRegistries
-
-var MOD_ID = "namlanforminecraft"
-@Suppress("unused")
-fun init() {
-    // This code runs as soon as Minecraft is in a mod-load-ready state.
-    // However, some things (like resources) may still be uninitialized.
-    // Proceed with mild caution.
-
-    println("Hello Fabric world!")
-    ModRegistries.registerModStuff()
-}
+package com.github.carrot372.namlan.lexer
 

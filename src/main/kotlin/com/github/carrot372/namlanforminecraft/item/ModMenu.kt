@@ -13,18 +13,17 @@
  * limitations under the License.
  */
 
-package com.github.carrot372.namlanforminecraft
+package com.github.carrot372.namlanforminecraft.item
 
-import com.github.carrot372.namlanforminecraft.util.ModRegistries
+import com.github.carrot372.namlanforminecraft.MOD_ID
+import com.github.carrot372.namlanforminecraft.item.custom.DevTool
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
+import net.minecraft.item.ItemGroup
+import net.minecraft.item.ItemStack
+import net.minecraft.util.Identifier
 
-var MOD_ID = "namlanforminecraft"
-@Suppress("unused")
-fun init() {
-    // This code runs as soon as Minecraft is in a mod-load-ready state.
-    // However, some things (like resources) may still be uninitialized.
-    // Proceed with mild caution.
-
-    println("Hello Fabric world!")
-    ModRegistries.registerModStuff()
+object ModMenu {
+    var NAMLANGROUP: ItemGroup = FabricItemGroupBuilder.build(
+        Identifier(MOD_ID,"namlan")
+    ) { ItemStack(DevTool.DEVTOOL) }
 }
-
