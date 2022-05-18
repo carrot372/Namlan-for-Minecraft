@@ -13,13 +13,10 @@
  * limitations under the License.
  */
 
-package com.github.carrot372.namlan.lexer
+package com.github.carrot372.namlan
 
-object Lexer {
-    fun lexising(text: String) {
-        val token = text.split(',', ' ')
-        println(token)
-    }
+import com.github.carrot372.namlan.lexer.Lexer
 
-
+fun main() {
+    Lexer.lexising(readln())
 }

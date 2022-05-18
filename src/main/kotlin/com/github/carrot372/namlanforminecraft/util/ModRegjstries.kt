@@ -21,20 +21,18 @@ import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
-class ModRegistries() {
-    companion object {
-        fun registerModStuff() {
-            registerCommands()
-            registerItems()
-        }
+object ModRegistries {
+    fun registerModStuff() {
+        registerCommands()
+        registerItems()
+    }
 
-        private fun registerCommands() {
-            CommandRegistrationCallback.EVENT.register(StartCommand::register)
-        }
+    private fun registerCommands() {
+        CommandRegistrationCallback.EVENT.register(StartCommand::register)
+    }
 
-        private fun registerItems() {
-            Registry.register(Registry.ITEM, Identifier("namlanforminecraft","devtool"), DevTool.DEVTOOL)
-        }
+    private fun registerItems() {
+        Registry.register(Registry.ITEM, Identifier("namlanforminecraft","devtool"), DevTool.DEVTOOL)
     }
 }
 
