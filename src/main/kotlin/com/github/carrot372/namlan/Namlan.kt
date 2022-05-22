@@ -16,7 +16,18 @@
 package com.github.carrot372.namlan
 
 import com.github.carrot372.namlan.lexer.Lexer
+import java.io.File
 
 fun main() {
-    Lexer.lexising(readln())
+    /*
+    do {
+        val text = readln()
+        Lexer.lexing(text)
+    } while (text != "exit")
+    */
+    val file = File(readln())
+    val text = file.readText()
+    Lexer.lexing(text)
+
+    println("Namlan was Exit.")
 }
