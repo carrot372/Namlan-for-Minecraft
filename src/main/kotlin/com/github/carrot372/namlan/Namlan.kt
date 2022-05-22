@@ -15,7 +15,7 @@
 
 package com.github.carrot372.namlan
 
-import com.github.carrot372.namlan.lexer.Lexer
+import com.github.carrot372.namlan.tokenizer.Lexer
 import java.io.File
 
 fun main() {

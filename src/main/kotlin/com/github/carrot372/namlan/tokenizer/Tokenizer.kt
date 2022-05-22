@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.github.carrot372.namlan.lexer
+package com.github.carrot372.namlan.tokenizer
 
 import com.github.carrot372.namlan.*
 
